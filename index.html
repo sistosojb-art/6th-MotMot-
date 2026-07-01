@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Motmot Wifey 🌷</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Georgia,serif;
+background:linear-gradient(180deg,#ffe4f0,#fff7fb,#fff);
+overflow-x:hidden;
+color:#444;
+}
+
+/* Floating decorations */
+.float{
+position:fixed;
+font-size:28px;
+opacity:.22;
+pointer-events:none;
+animation:floatUp linear infinite;
+z-index:0;
+}
+
+@keyframes floatUp{
+0%{
+transform:translateY(100vh) rotate(0deg);
+opacity:0;
+}
+20%{opacity:.25;}
+100%{
+transform:translateY(-120px) rotate(360deg);
+opacity:0;
+}
+}
+
+.container{
+position:relative;
+z-index:1;
+max-width:520px;
+margin:auto;
+padding:18px;
+}
+
+/* Intro screen */
+#intro{
+position:fixed;
+inset:0;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+background:linear-gradient(180deg,#ffe4f0,#fff8fc);
+z-index:999;
+animation:fadeOut 2.4s forwards;
+animation-delay:2.4s;
+}
+
+#intro h1{
+font-size:32px;
+color:#d96c8c;
+text-align:center;
+padding:20px;
+}
+
+#intro p{
+color:#b96f88;
+font-size:18px;
+}
+
+@keyframes fadeOut{
+to{
+opacity:0;
+visibility:hidden;
+}
+}
+
+/* Banner */
+.banner{
+width:100%;
+border-radius:24px;
+box-shadow:0 15px 40px rgba(0,0,0,.12);
+opacity:0;
+transform:translateY(25px);
+animation:bannerReveal 1.3s forwards;
+animation-delay:2.7s;
+}
+
+@keyframes bannerReveal{
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* Premium card */
+.card{
+margin-top:18px;
+background:rgba(255,255,255,.55);
+backdrop-filter:blur(16px);
+border:1px solid rgba(255,255,255,.65);
+box-shadow:0 18px 45px rgba(217,108,140,.18);
+border-radius:28px;
+padding:26px;
+}
+
+h1{
+text-align:center;
+color:#d96c8c;
+margin-bottom:18px;
+font-size:34px;
+}
+
+p{
+font-size:17px;
+line-height:1.9;
+margin-bottom:16px;
+}
+
+.highlight{
+color:#d96c8c;
+font-weight:bold;
+font-size:20px;
+text-align:center;
+text-shadow:0 0 8px rgba(217,108,140,.2);
+}
+
+/* Read letter button */
+.read-btn{
+display:block;
+margin:20px auto 0;
+padding:14px 22px;
+border:none;
+border-radius:24px;
+background:#f7bfd1;
+color:white;
+font-size:16px;
+cursor:pointer;
+box-shadow:0 6px 18px rgba(217,108,140,.3);
+}
+
+/* Letter hidden initially */
+#letterContent{
+display:none;
+animation:openLetter 1s ease;
+}
+
+@keyframes openLetter{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+</style>
+</head>
+<body>
+
+<div id="intro">
+<h1>For My Queen,<br>Inori Senshi Antonio 🌷</h1>
+<p>Hubby made something for you… 🤭</p>
+</div>
+
+<div class="float" style="left:8%;animation-duration:22s;">🌷</div>
+<div class="float" style="left:23%;animation-duration:18s;">💞</div>
+<div class="float" style="left:40%;animation-duration:24s;">✨</div>
+<div class="float" style="left:61%;animation-duration:20s;">🌷</div>
+<div class="float" style="left:82%;animation-duration:17s;">💞</div>
+
+<div class="container">
+<img src="Panda.jpg" class="banner">
+
+<div class="card">
+<h1>Happy Motmot 🌷</h1>
+
+<button class="read-btn" onclick="openLetter()">
+💌 Read Hubby's Letter
+</button>
+
+<div id="letterContent">
+  
+  <p>To My Queen, My Wifey, My Mrs. Sistoso — Inori Senshi Antonio 🌷☺️</p>
+
+<p>Happy Motmot, wifey.</p>
+
+<p>As I look back at our month of June, I realize how much we went through together.</p>
+
+<p>June was not an easy month for us.</p>
+
+<p>There were fears, overthinking, misunderstandings, tears, difficult conversations, and moments where both of us felt mentally and emotionally tired.</p>
+
+<p>There were days when your heart felt heavy because of wounds from the past. Days when fear became louder than peace. Days when overthinking made you question things, even my heart and intentions.</p>
+
+<p>But despite all of that… we’re still here.</p>
+
+<p class="highlight">Still choosing each other.</p>
+
+<p>And that means so much to me.</p>
+
+<p>This month made me understand your heart even more.</p>
+
+<p>I saw your fears.</p>
+<p>I saw your pain.</p>
+<p>I saw your overthinking.</p>
+<p>I saw the silent battles inside your heart that other people cannot see.</p>
+
+<p>But I also saw something beautiful in you.</p>
+
+<p class="highlight">Your strength.</p>
+
+<p>Even when things felt heavy, even when your heart was scared, you still kept trying.</p>
+
+<p>You still kept loving me.</p>
+<p>You still stayed.</p>
+
+<p>And My Queen, I want you to always remember this.</p>
+
+<p class="highlight">I still choose you.</p>
+
+<p>Not only during sweet moments.</p>
+<p>Not only when everything feels easy.</p>
+<p>Not only when there is peace.</p>
+
+<p>I choose you even on difficult days.</p>
+<p>I choose you through misunderstandings.</p>
+<p>I choose you when fear becomes loud.</p>
+
+<p>I never asked for perfection, wifey.</p>
+
+<p>I never needed a perfect girl.</p>
+
+<p>I just wanted you.</p>
+
+<p>Your heart.</p>
+<p>Your softness.</p>
+<p>Your faith.</p>
+<p>The real you.</p>
+
+<p>And there’s one thing I’ll be selfish with.</p>
+
+<p class="highlight">Please outlive me ☺️</p>
+
+<p>Because I cannot bear the thought of being alone and living in a world without you.</p>
+
+<p>Because I cannot bear waking up one day and not having you beside me.</p>
+
+<p>But if life turns out differently, and I’m the one who outlive you… know that God knows my heart, and I believe He knows yours too.</p>
+
+<p>So wherever life takes us… wherever eternity takes us… I trust that God will lead our paths back to each other again. 🌷</p>
+
+<p>This June also reminded me that we cannot do this alone.</p>
+
+<p>That’s why I’m grateful that we keep trying to walk with God together.</p>
+
+<p>When fear comes, we pray.</p>
+<p>When temptation comes, we rebuke it.</p>
+<p>When overthinking comes, we surrender it to Him.</p>
+
+<p>I pray God continues healing every wound inside your heart and removes every fear, insecurity, and pain from your past.</p>
+
+<p>Thank you for staying.</p>
+<p>Thank you for loving hubby.</p>
+<p>Thank you for choosing us.</p>
+
+<p>No matter what season comes…</p>
+
+<p class="highlight">I will keep choosing you.</p>
+
+<p>Happy Motmot, My Queen.</p>
+<p>Happy Motmot, My Wifey.</p>
+<p>Happy Motmot, My Mrs. Sistoso 🌷☺️</p>
+
+<p class="highlight">
+ILOVEYOUSOOOOOOOOO MUCH WIFEY MWUAAAAAAAA NMWUAAAAAA 💋🌷
+</p>
+
+<div style="text-align:center;margin-top:24px;">
+<button class="read-btn" onclick="showSecret()">
+🌷 Hubby hid one more surprise…
+</button>
+</div>
+</div>
+</div>
+  <div id="secretPage" style="display:none; margin-top:24px;">
+
+<div class="card">
+<h1>Hubby’s Secret Page 🤭</h1>
+
+<div class="nav" style="
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:12px;
+margin-top:20px;">
+
+<button class="read-btn" onclick="openTab('letter2')" style="margin:0;">
+💌 More Letter
+</button>
+
+<button class="read-btn" onclick="openTab('notes')" style="margin:0;">
+📝 Daily Notes
+</button>
+
+<button class="read-btn" onclick="openTab('bible')" style="margin:0;">
+📖 Bible
+</button>
+
+<button class="read-btn" onclick="openTab('gallery')" style="margin:0;">
+📸 Gallery
+</button>
+</div>
+
+<!-- Letter 2 -->
+<div id="letter2" class="tab-content active" style="margin-top:22px;">
+<h2 style="text-align:center;color:#d96c8c;">More Letter 🌷</h2>
+
+<p>My Wifey,</p>
+
+<p>Even after every heavy conversation this June, one thing never changed.</p>
+
+<p class="highlight">I still stayed.</p>
+
+<p>I know sometimes overthinking becomes louder than truth.</p>
+
+<p>I know fear can make your heart tired.</p>
+
+<p>But whenever those fears return, I hope you remember this.</p>
+
+<p>You do not need to fight every battle alone.</p>
+
+<p>I am here.</p>
+<p>God is here.</p>
+
+<p>And no fear, no doubt, and no wound from the past can change the fact that I still choose you.</p>
+</div>
+
+<!-- Notes -->
+<div id="notes" class="tab-content" style="margin-top:22px;">
+<h2 style="text-align:center;color:#d96c8c;">Daily Notes 📝</h2>
+
+<div class="note">🌷 Rest your heart. Not everything is a warning.</div>
+<div class="note">🌷 Overthinking is not always truth.</div>
+<div class="note">🌷 Ask before assuming.</div>
+<div class="note">🌷 We are a team, not enemies.</div>
+<div class="note">🌷 God is bigger than fear.</div>
+<div class="note">🌷 Hubby still chooses you today.</div>
+</div>
+
+<!-- Bible -->
+<div id="bible" class="tab-content" style="margin-top:22px;">
+<h2 style="text-align:center;color:#d96c8c;">Bible Verses 📖</h2>
+
+<p><b>Philippians 4:6–7</b><br>
+Do not be anxious about anything… and the peace of God will guard your hearts and minds.</p>
+
+<p><b>Isaiah 41:10</b><br>
+Fear not, for I am with you.</p>
+
+<p><b>1 Corinthians 13:7</b><br>
+Love bears all things, believes all things, hopes all things, endures all things.</p>
+
+<p><b>Psalm 34:18</b><br>
+The Lord is close to the brokenhearted.</p>
+</div>
+
+<!-- Gallery -->
+<div id="gallery" class="tab-content" style="margin-top:22px;">
+<h2 style="text-align:center;color:#d96c8c;">Gallery 📸</h2>
+
+<img src="Hands.jpg" class="banner">
+
+<p style="text-align:center; margin-top:16px;">
+Still choosing each other, one day at a time 🌷
+</p>
+
+<button class="read-btn" onclick="finalSurprise()">
+💋 Press me if you love hubby
+</button>
+</div>
+
+</div>
+</div>
+  <div id="secretPage" style="display:none; margin-top:24px;">
+
+<div class="card">
+<h1>Hubby’s Secret Page 🤭</h1>
+
+<div class="nav" style="
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:12px;
+margin-top:20px;">
+
+<button class="read-btn" onclick="openTab('letter2')" style="margin:0;">
+💌 More Letter
+</button>
+
+<button class="read-btn" onclick="openTab('notes')" style="margin:0;">
+📝 Daily Notes
+</button>
+
+<button class="read-btn" onclick="openTab('bible')" style="margin:0;">
+📖 Bible
+</button>
+
+<button class="read-btn" onclick="openTab('gallery')" style="margin:0;">
+📸 Gallery
+</button>
+</div>
+
+<!-- Letter 2 -->
+<div id="letter2" class="tab-content active" style="margin-top:22px;">
+<h2 style="text-align:center;color:#d96c8c;">More Letter 🌷</h2>
+
+<p>My Wifey,</p>
+
+<p>Even after every heavy conversation this June, one thing never changed.</p>
+
+<p class="highlight">I still stayed.</p>
+
+<p>I know sometimes overthinking becomes louder than truth.</p>
+
+<p>I know fear can make your heart tired.</p>
+
+<p>But whenever those fears return, I hope you remember this.</p>
+
+<p>You do not need to fight every battle alone.</p>
+
+<p>I am here.</p>
+<p>God is here.</p>
+
+<p>And no fear, no doubt, and no wound from the past can change the fact that I still choose you.</p>
+</div>
+
+<!-- Notes -->
+<div id="notes" class="tab-content" style="margin-top:22px;">
+<h2 style="text-align:center;color:#d96c8c;">Daily Notes 📝</h2>
+
+<div class="note">🌷 Rest your heart. Not everything is a warning.</div>
+<div class="note">🌷 Overthinking is not always truth.</div>
+<div class="note">🌷 Ask before assuming.</div>
+<div class="note">🌷 We are a team, not enemies.</div>
+<div class="note">🌷 God is bigger than fear.</div>
+<div class="note">🌷 Hubby still chooses you today.</div>
+</div>
+
+<!-- Bible -->
+<div id="bible" class="tab-content" style="margin-top:22px;">
+<h2 style="text-align:center;color:#d96c8c;">Bible Verses 📖</h2>
+
+<p><b>Philippians 4:6–7</b><br>
+Do not be anxious about anything… and the peace of God will guard your hearts and minds.</p>
+
+<p><b>Isaiah 41:10</b><br>
+Fear not, for I am with you.</p>
+
+<p><b>1 Corinthians 13:7</b><br>
+Love bears all things, believes all things, hopes all things, endures all things.</p>
+
+<p><b>Psalm 34:18</b><br>
+The Lord is close to the brokenhearted.</p>
+</div>
+
+<!-- Gallery -->
+<div id="gallery" class="tab-content" style="margin-top:22px;">
+<h2 style="text-align:center;color:#d96c8c;">Gallery 📸</h2>
+
+<img src="PUT_HANDHOLDING_IMAGE_HERE.jpg" class="banner">
+
+<p style="text-align:center; margin-top:16px;">
+Still choosing each other, one day at a time 🌷
+</p>
+
+<button class="read-btn" onclick="finalSurprise()">
+💋 Press me if you love hubby
+</button>
+</div>
+
+</div>
+</div>
+<script>
+function openLetter(){
+    document.getElementById("letterContent").style.display = "block";
+}
+
+function showSecret(){
+    document.getElementById("secretPage").style.display = "block";
+    document.getElementById("secretPage").scrollIntoView({
+        behavior:"smooth"
+    });
+}
+
+function openTab(tabName){
+    let tabs = document.querySelectorAll(".tab-content");
+
+    tabs.forEach(tab=>{
+        tab.classList.remove("active");
+        tab.style.display="none";
+    });
+
+    let selected = document.getElementById(tabName);
+    selected.style.display="block";
+    selected.classList.add("active");
+}
+
+/* Final surprise */
+function finalSurprise(){
+    const overlay = document.createElement("div");
+
+    overlay.style.position = "fixed";
+    overlay.style.inset = "0";
+    overlay.style.background = "rgba(255,230,242,0.96)";
+    overlay.style.display = "flex";
+    overlay.style.flexDirection = "column";
+    overlay.style.justifyContent = "center";
+    overlay.style.alignItems = "center";
+    overlay.style.zIndex = "99999";
+    overlay.style.padding = "20px";
+    overlay.style.textAlign = "center";
+
+    overlay.innerHTML = `
+        <div style="
+            font-size:36px;
+            color:#d96c8c;
+            font-weight:bold;
+            line-height:1.6;
+            text-shadow:0 0 12px rgba(217,108,140,.4);
+            animation:pulse 1.2s infinite;
+        ">
+        ILOVEYOUSOOOOOOOOO<br>
+        MUCH WIFY KOOOOW MWUAAAAAAA
+  MWIUAAAAAAA💋 😽 💞 🌷 😘 💋 🤭 🌷
+        </div>
+
+        <div style="font-size:42px; margin-top:25px;">
+        💋 😽 💞 🌷 😘 💋 🤭 🌷
+        </div>
+
+        <button onclick="this.parentElement.remove()" style="
+            margin-top:35px;
+            padding:14px 24px;
+            border:none;
+            border-radius:24px;
+            background:#f6bfd0;
+            color:white;
+            font-size:16px;
+        ">
+        Close 🤭
+        </button>
+    `;
+
+    document.body.appendChild(overlay);
+}
+</script>
+
+<style>
+@keyframes pulse{
+    0%{transform:scale(1);}
+    50%{transform:scale(1.06);}
+    100%{transform:scale(1);}
+}
+</style>
+
+</body>
+</html>
